@@ -37,7 +37,6 @@ Mewtwo
 Lugia
 Ho-Oh
 Kyogre
-Groudon
 Rayquaza
 Dialga
 Palkia
@@ -99,7 +98,6 @@ Melmetal
 Zarude
 Wo-Chien
 Chien-Pao
-Ting-Lu
 Chi-Yu
 Koraidon
 Miraidon
