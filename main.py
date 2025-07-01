@@ -198,11 +198,11 @@ async def on_message(message):
             if solution:
                 await move_channel(channel, solution, 'Gmax')
 
-        # If not found, check for Cal Pokémon
+       # If still not found, check for Cal Pokémon
         if not solution:
-            solution = solve(content, 'Cal.txt')
+            solution = solve(content, 'cal.txt')
             if solution:
-                await move_channel(channel, solution, 'Cal')
+                await move_channel(channel, solution, 'cal')
         
     # auto delete caught pokemon
     if message.author.id == poketwo:
