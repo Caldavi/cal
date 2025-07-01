@@ -202,7 +202,7 @@ async def on_message(message):
         if not solution:
             solution = solve(content, 'cal.txt')
             if solution:
-                await move_channel(channel, solution, 'cal')
+                await move_channel(channel, solution, 'Cal')
         
     # auto delete caught pokemon
     if message.author.id == poketwo:
