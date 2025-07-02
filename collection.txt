@@ -904,25 +904,11 @@ Family of Three Maushold
 Three-Segment Dudunsparce
 Roaming Gimmighoul
 Hero Palafin
-Wellspring Mask Ogerpon
-Hearthflame Mask Ogerpon
-Cornerstone Mask Ogerpon
-Zygarde Cell
-Zygarde Core
-Zenith Marshadow
-Pirouette Meloetta
-Dada Zarude
 Bloodmoon Ursaluna
 Jangmo-o
 Hakamo-o
 Kommo-o
 Spiky-eared Pichu 
-Vanilla Cream Berry Sweet Alcremie
-Vanilla Cream Love Sweet Alcremie
-Vanilla Cream Star Sweet Alcremie
-Vanilla Cream Clover Sweet Alcremie
-Vanilla Cream Flower Sweet Alcremie
-Vanilla Cream Ribbon Sweet Alcremie
 Rotom Pokédex
 Rotom Phone
 Rotom Drone
@@ -1027,5 +1013,5 @@ Gouging fire
 Raging bolt
 Iron boulder
 Iron crown
-Spiky-eared Pichu
 Cal
+Spiky-eared Pichu
