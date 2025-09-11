@@ -432,11 +432,11 @@ async def pokemon(ctx, *channel_names):
         await client.wait_until_ready()
         channel = client.get_channel(1289753494835822655)
         if not channel:
-            print(f"Channel with ID {CHANNEL_ID} not found.")
+            print(f"Channel with ID {1289753494835822655} not found.")
             return
 
         while not client.is_closed():
-            await channel.send("This is an automated message!")
+            await channel.send("@Caldavi")
             await asyncio.sleep(MESSAGE_INTERVAL_SECONDS)
 
     @client.event
