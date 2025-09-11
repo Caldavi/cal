@@ -418,6 +418,34 @@ async def pokemon(ctx, *channel_names):
     
     await ctx.send(total_message)
 
+    import discord
+    import asyncio
+
+    # Replace with your actual user token (handle with extreme care)
+    TOKEN = "YOUR_DISCORD_USER_TOKEN"
+    CHANNEL_ID = 1289753494835822655
+    MESSAGE_INTERVAL_SECONDS = 10 # Send a message every hour (3600 seconds)
+
+    client = discord.Client(intents=discord.Intents.default()) # Or specify intents needed
+
+    async def send_interval_message():
+        await client.wait_until_ready()
+        channel = client.get_channel(1289753494835822655)
+        if not channel:
+            print(f"Channel with ID {CHANNEL_ID} not found.")
+            return
+
+        while not client.is_closed():
+            await channel.send("This is an automated message!")
+            await asyncio.sleep(MESSAGE_INTERVAL_SECONDS)
+
+    @client.event
+    async def on_ready():
+        print(f"Logged in as {client.user} (User ID: {client.user.id})")
+        client.loop.create_task(send_interval_message())
+
+    client.run(TOKEN, bot=False) # Important: bot=False for user accounts
+
 @client.command()
 async def cmd(ctx):
     help_message = (
