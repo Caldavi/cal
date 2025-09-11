@@ -424,7 +424,7 @@ async def pokemon(ctx, *channel_names):
     # Replace with your actual user token (handle with extreme care)
     TOKEN = "YOUR_DISCORD_USER_TOKEN"
     CHANNEL_ID = 1289753494835822655
-    MESSAGE_INTERVAL_SECONDS = 10 # Send a message every hour (3600 seconds)
+    MESSAGE_INTERVAL_SECONDS = 10 # Send a message every 10 seconds (10 seconds)
 
     client = discord.Client(intents=discord.Intents.default()) # Or specify intents needed
 
