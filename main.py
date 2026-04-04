@@ -15,7 +15,7 @@ version = 'v2.3'
 prefix = "."
 
 P2Assistant = 854233015475109888
-poketwo = 716390085896962058
+poketwo = 716390085896962058   
 Pokename = 874910942490677270
 authorized_ids = [Pokename, poketwo, P2Assistant]
 client = commands.Bot(command_prefix=prefix)
@@ -92,20 +92,6 @@ def solve(message, file_name):
     with open(file_name, "r") as f:
         solutions = f.read()
     solution = re.findall('^' + hint_replaced + '$', solutions, re.MULTILINE)
-    if len(solution) == 0:
-        return None
-    return solution
-
-def solve(message, file_name):
-    very mindful = []
-    for i in range(15, len(message) - 1):
-        if message[i] != '\\':
-            very mindful.append(message[i])
-    very mindful_string = ''.join(very mindful)
-    very mindful_replaced = very mindful_string.replace('_', '.')
-    with open(file_name, "r") as f:
-        solutions = f.read()
-    solution = re.findall('^' + very mindful_replaced + '$', solutions, re.MULTILINE)
     if len(solution) == 0:
         return None
     return solution
