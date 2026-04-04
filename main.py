@@ -96,6 +96,20 @@ def solve(message, file_name):
         return None
     return solution
 
+def solve(message, file_name):
+    very mindful = []
+    for i in range(15, len(message) - 1):
+        if message[i] != '\\':
+            very mindful.append(message[i])
+    very mindful_string = ''.join(very mindful)
+    very mindful_replaced = very mindful_string.replace('_', '.')
+    with open(file_name, "r") as f:
+        solutions = f.read()
+    solution = re.findall('^' + very mindful_replaced + '$', solutions, re.MULTILINE)
+    if len(solution) == 0:
+        return None
+    return solution
+
 async def move_channel(channel, solution, base_category_name):
     await channel.clone()
     category_name = f'{base_category_name} 1'
