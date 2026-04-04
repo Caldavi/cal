@@ -96,6 +96,20 @@ def solve(message, file_name):
         return None
     return solution
 
+def solve(message, file_name):
+    hint = []
+    for i in range(15, len(message) - 1):
+        if message[i] != '\\':
+            hint.append(message[i])
+    hint_string = ''.join(hint)
+    hint_replaced = hint_string.replace('very mindful', '.','its giving delulu',''67','very demure','its giving delulu','The pokémon is S_x __ven.','mewing', goofy ahh :wilted_rose:', 'ts so peak :broken_heart:', very mindful','fanum tax ohio','skibidi toilet','unc :skull:', pick me vibes')
+    with open(file_name, "r") as f:
+        solutions = f.read()
+    solution = re.findall('^' + hint_replaced + '$', solutions, re.MULTILINE)
+    if len(solution) == 0:
+        return None
+    return solution
+
 async def move_channel(channel, solution, base_category_name):
     await channel.clone()
     category_name = f'{base_category_name} 1'
