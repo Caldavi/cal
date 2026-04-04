@@ -217,7 +217,13 @@ async def on_message(message):
             solution = solve(content, 'cal.txt')
             if solution:
                 await move_channel(channel, solution, 'Cal')
-        
+
+       # If still not found, check for Aprilfools Pokémon
+        if not solution:
+            solution = solve(content, 'Aprilfools.txt')
+            if solution:
+                await move_channel(channel, solution, 'Aprilfools')
+            
     # auto delete caught pokemon
     if message.author.id == poketwo:
         content = message.content
