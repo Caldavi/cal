@@ -770,9 +770,6 @@ Dragapult
 Wyrdeer
 Kleavor
 Ursaluna
-Basculegion
-Sneasler
-Overqwil
 Sprigatito
 Floragato
 Meowscarada
@@ -1011,10 +1008,3 @@ Raging bolt
 Iron boulder
 Iron crown
 Spiky-eared Pichu
-Prof Tangrowth
-Chef Dente
-DJ Rotom
-Smearguru
-Peakychu
-Mosslax
-Pokopia Ditto
